@@ -69,7 +69,7 @@ class Game {
     endGame(msg) {
         const top = document.getElementById('column-top');
         top.removeEventListener('click', this.clickHandler);
-        setTimeout(() => alert(msg), 500);      
+        setTimeout(() => alert(msg), 2000);      
     }
     handleClick(evt) {
         // get x from ID of clicked cell
