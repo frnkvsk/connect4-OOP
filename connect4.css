@@ -58,22 +58,22 @@ form {
 }
 
 .p5 {
-  animation: drop1 2s;
+  animation: drop1 1.2s;
 }
 .p4 {
-  animation: drop2 2s;
+  animation: drop2 1.2s;
 }
 .p3 {
-  animation: drop3 2s;
+  animation: drop3 1.2s;
 }
 .p2 {
-  animation: drop4 2s;
+  animation: drop4 1.2s;
 }
 .p1 {
-  animation: drop5 2s;
+  animation: drop5 1.2s;
 }
 .p0 {  
-  animation: drop6 2s;
+  animation: drop6 1.2s;
 }
 
 /* column-top is table row of clickable areas for each column */
