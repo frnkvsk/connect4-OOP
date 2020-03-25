@@ -1,0 +1,112 @@
+
+* {
+  background: beige;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+p {
+  font-family: 'Acme', sans-serif;
+  font-size: 55px;
+  font-weight: bold;
+  margin: 10px;
+  color: rgb(75, 159, 255);
+}
+
+.control {
+  width: 372px;
+  padding: 10px;
+  background: rgb(247, 229, 183);
+}
+
+input {
+  width: 32%;
+  padding: 5px;
+}
+
+button {
+  width: 25%;
+  border-radius: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  background: rgb(247, 229, 183);
+}
+
+/* game board table */
+#board td {
+  width: 50px;
+  height: 50px;
+  border: solid 1px #666;
+}
+
+/* pieces are div within game table cells: draw as colored circles */
+.piece {
+  margin: 5px;
+  width: 80%;
+  height: 80%;
+  border-radius: 50%;
+  position: relative;  
+}
+
+.p5 {
+  animation: drop1 2s;
+}
+.p4 {
+  animation: drop2 2s;
+}
+.p3 {
+  animation: drop3 2s;
+}
+.p2 {
+  animation: drop4 2s;
+}
+.p1 {
+  animation: drop5 2s;
+}
+.p0 {  
+  animation: drop6 2s;
+}
+
+/* column-top is table row of clickable areas for each column */
+#column-top td {
+  border: dashed 1px lightgray;
+}
+
+#column-top td:hover {
+  background-color: gold;
+}
+
+/*--------- ANIMATION ----------*/
+@keyframes drop1 {
+  0% { bottom: 350px; }
+  100% { bottom: 1px; }
+}
+@keyframes drop2 {
+  0% { bottom: 290px; }
+  100% { bottom: 1px; }
+}
+@keyframes drop3 {
+  0% { bottom: 235px; }
+  100% { bottom: 1px; }
+}
+@keyframes drop4 {
+  0% { bottom: 180px; }
+  100% { bottom: 1px; }
+}
+@keyframes drop5 {
+  0% { bottom: 130px; }
+  100% { bottom: 1px; }
+}
+@keyframes drop6 {
+  0% { bottom: 70px; }
+  100% { bottom: 1px; }
+}
