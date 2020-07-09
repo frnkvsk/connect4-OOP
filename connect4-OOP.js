@@ -100,7 +100,6 @@ class Game {
     }
     /** checkForWin: check if last move is a win for current player */
     checkForWin(y, x) {
-        console.log(this.board)
         for(let [r1,c1, r2,c2] of [[-1,-1,1,1],[-1,0,1,0],[-1,1,1,-1],[0,1,0,-1]]) {  
           let cnt = 1;  
           cnt += this.checkForWinHelper(y + r1, x + c1, r1, c1);
